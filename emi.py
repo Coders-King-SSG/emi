@@ -5,7 +5,7 @@ ch = st.radio('Calculate', ('EMI', 'Outstanding Loan Balance'))
 
 if ch == 'EMI':
 	p = st.number_input('Principle amount : ')
-	r = st.slider('Rate of interest : ', 0.0, 50.0, step=1.0)
+	r = st.slider('Rate of interest : ', 0.0, 50.0, step=0.1)
 	n = st.number_input('Number of months : ')
 	if st.button('Calculate'):
 		emi = p * (r/100) * (((1+(r/100))**n)/(((1+(r/100))**n)-1))
