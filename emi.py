@@ -12,7 +12,7 @@ if ch == 'EMI':
 		st.write('EMI = ', round(emi, 2))
 elif ch == 'Outstanding Loan Balance':
 	p = st.number_input('Principle amount : ')
-	r = st.slider('Rate of interest : ', 0.0, 50.0, step=1.0)
+	r = st.number_input('Rate of interest : ', 0.0, 50.0, step=1.0)
 	n = st.number_input('Number of months : ')
 	m = st.number_input('After how many months balance is calculated: ')
 	if st.button('Calculate'):
